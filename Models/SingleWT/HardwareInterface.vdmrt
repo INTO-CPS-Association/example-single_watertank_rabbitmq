@@ -1,0 +1,24 @@
+--##	EXPORT	7a49cbae7c43bb36eff962a87a01cd851aa9a610	watertankController.fmu	2017-28-03 10:27:52	tool-wrapper	{"name":"fmu-import-export","version":"0.2.1-SNAPSHOT"}
+--##	EXPORT	ac621cfaf051a4958946021f7a838dad25cef21f	watertankController.fmu	2017-08-03 10:51:37	c-code	{"name":"fmu-import-export","version":"0.1.7-SNAPSHOT"}
+-- Generated class
+class HardwareInterface
+
+values
+	-- @ interface: type = parameter, name="minlevel";
+	public minlevel : RealPort = new RealPort(1.0);
+	-- @ interface: type = parameter, name="maxlevel";
+	public maxlevel : RealPort = new RealPort(2.0);
+
+
+instance variables
+	-- @ interface: type = input, name="level";
+	public level : RealPort := new RealPort(0.0);
+
+
+instance variables
+	-- @ interface: type = output, name="valve";
+	public valveState : BoolPort := new BoolPort(false);
+
+
+end HardwareInterface
+
